@@ -1,0 +1,174 @@
+
+ /* changes  of the menu (parte responsive) */
+
+ .checkbtn{
+    font-size: 20px;
+    color: azure;
+    float: left;
+    line-height: 80px;
+    margin-left: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn1{
+    font-size: 20px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display:none ;
+    float: left;
+}
+#check1{
+    float: right;
+  
+    top: 0%;
+
+}
+
+
+
+
+
+ /* changes  of the menu (parte responsive) */
+
+@media (max-width: 1050px){
+ 
+   
+    
+    nav ul li a{
+        font-size: 16px;
+
+    }
+
+    
+    .checkbtn{
+        display: block;
+    }
+    .checkbtn1{
+        display: block;
+    }
+    ul.uno{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(245, 241, 237, 0.762) ;
+       
+        top: 80px;
+        right: -100%;
+        text-align: left;
+        transition: all .5s;
+    }
+   
+    header ul li{
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    header  ul il a{
+        font-size: 20px;
+        
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(52, 124, 52);
+    } 
+    #check:checked ~ ul.uno{
+        right: 0;
+    }
+    #check1:checked ~ ul.dos {
+        left: 0;
+    }
+    .active{
+        display:none;
+    }
+    nav ul.uno {
+    
+        margin-left:0 px;
+     
+    }
+    
+    li.dos{
+        margin-left:0px ;
+    }
+    
+
+
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 858px){
+
+
+
+    .enlace{
+       position: fixed;
+     left: 10px;
+  
+      }
+      
+     
+
+    .checkbtn{
+        float: right;
+        
+    }
+    .checkbtn1{
+        float: left;
+    }
+    ul.uno{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(228, 225, 220, 0.399) ;
+    
+        top: 80px;
+        right: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+   
+    header  ul li{
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header  ul il a{
+        font-size: 20px;
+    }
+    
+    #check:checked ~ ul.uno{
+        right: 0;
+    }
+
+    nav ul.uno {
+    
+        margin-left:0 px;
+     
+    }
+    
+    li.dos{
+        margin-left:0px ;
+    }
+    
+    
+    
+}
+
+ /* end responsive part */
+  /* end menu */
+
